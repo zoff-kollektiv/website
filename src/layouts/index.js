@@ -1,25 +1,23 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import Helmet from 'react-helmet';
+import React from 'react';
 
-import './index.css'
+import i18n from '../components/i18n';
+import './index.scss';
 
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        {
+          name: 'description',
+          content: data.site.siteMetadata.description,
+        },
       ]}
     />
     {children()}
   </div>
-)
-
-Layout.propTypes = {
-  children: PropTypes.func,
-}
+);
 
 export default Layout
 

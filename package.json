@@ -5,10 +5,18 @@
   "private": true,
   "author": "Gustav Pursche <pursche@posteo.de>",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.5.1",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
-    "react-helmet": "^5.2.0"
+    "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-plugin-styled-components": "^2.0.11",
+    "i18next": "^11.3.6",
+    "i18next-browser-languagedetector": "^2.2.0",
+    "i18next-xhr-backend": "^1.5.1",
+    "react-helmet": "^5.2.0",
+    "react-i18next": "^7.8.1",
+    "styled-components": "^3.3.3"
   },
   "license": "MIT",
   "scripts": {
