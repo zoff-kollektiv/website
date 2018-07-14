@@ -10,6 +10,12 @@ const Lang = ({ lang, selected }) => (
 
 const Header = props => (
   <header>
+    <style jsx>{`
+      header {
+        border: 2px solid red;
+      }
+    `}</style>
+
     <h1>
       <Trans>Zoff collective</Trans>
     </h1>
