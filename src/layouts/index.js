@@ -15,6 +15,14 @@ const TemplateWrapper = ({ children, lang, data }) => (
           content: data.site.siteMetadata.description,
         },
       ]}
+      link={[
+        {
+          rel: 'preload',
+          href:
+            '/fonts/markwebpro-bold-w01-regular/markwebpro-bold-w01-regular.woff2',
+          as: 'font',
+        },
+      ]}
     />
 
     <style jsx global>{`
