@@ -21,13 +21,21 @@ export default css`
     transform: translate(-50%, -50%);
   }
 
-  .hello__image {
-    width: 100%;
-  }
-
   @media ${mq.mobile} {
     .hello__title {
       font-size: 17rem;
+    }
+  }
+
+  .hello__image {
+    height: 100%;
+    min-width: 100%;
+  }
+
+  @media ${mq.tabletLandscape} {
+    .hello__image {
+      height: auto;
+      width: 100%;
     }
   }
 `
