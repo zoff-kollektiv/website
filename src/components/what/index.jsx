@@ -2,13 +2,11 @@ import React from 'react';
 
 import styles from './styles';
 
-const What = () => (
+const What = ({ paragraphs }) => (
     <section className="what">
         <style jsx>{styles}</style>
 
-        <p className="what__paragraph">
-            Zoff ist ein berliner Kollektiv, welches visuelle Kommunikationswerkzeuge im Kontext von politischen, sozialen, kulturellen und Bildungsprojekten entwickelt.
-        </p>
+        {paragraphs.map(_ => <p className="what__paragraph">{_}</p>)}
     </section>
 );
 

@@ -8,7 +8,11 @@ import What from '../components/what'
 const IndexPage = ({ i18n }) => (
   <Fragment>
     <Hello title="Zoff" />
-    <What />
+    <What
+      paragraphs={[
+        'Zoff ist ein berliner Kollektiv, welches visuelle Kommunikationswerkzeuge im Kontext von politischen, sozialen, kulturellen und Bildungsprojekten entwickelt.',
+      ]}
+    />
     <Imprint />
   </Fragment>
 )
