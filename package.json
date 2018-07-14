@@ -26,6 +26,7 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.53",
     "@babel/preset-react": "^7.0.0-beta.53",
     "@lingui/babel-preset-react": "^2.2.0",
+    "@lingui/cli": "^2.2.0",
     "prettier": "^1.13.7"
   },
   "lingui": {
