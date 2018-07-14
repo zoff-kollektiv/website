@@ -9,13 +9,12 @@ const catalogs = languages.reduce((acc, current) => {
   return acc
 }, {})
 
-
 const prefix = lang => (lang == defaultLanguage ? '/' : '/' + lang)
 const deprefix = pathname =>
   !pathname.startsWith(`/${defaultLanguage}/`) ? pathname.substr(4) : pathname
 const langFromPath = pathname => {
-  const languagePrefix = /^\/([a-z]{2})\//.exec(pathname);
-  return (languagePrefix && languagePrefix[1])  || defaultLanguage;
+  const languagePrefix = /^\/([a-z]{2})\//.exec(pathname)
+  return (languagePrefix && languagePrefix[1]) || defaultLanguage
 }
 
 exports.defaultLanguage = defaultLanguage

@@ -1,9 +1,9 @@
-import React, { Component, Fragment } from 'react';
-import Helmet from 'react-helmet';
-import { I18nProvider } from '@lingui/react';
+import React, { Component, Fragment } from 'react'
+import Helmet from 'react-helmet'
+import { I18nProvider } from '@lingui/react'
 
-import { catalogs, langFromPath } from '../i18n-config';
-import { fonts } from '../tokens';
+import { catalogs, langFromPath } from '../i18n-config'
+import { fonts } from '../tokens'
 
 const TemplateWrapper = ({ children, lang, data }) => (
   <Fragment>
@@ -25,6 +25,7 @@ const TemplateWrapper = ({ children, lang, data }) => (
       }
 
       body {
+        background-color: #fff;
         margin: 0;
         padding: 0;
       }
@@ -32,8 +33,10 @@ const TemplateWrapper = ({ children, lang, data }) => (
       @font-face {
         font-family: ${fonts.mark.name};
         font-weight: ${fonts.mark.weight.bold};
-        src: url(/fonts/markwebpro-bold-w01-regular/markwebpro-bold-w01-regular.woff) format('woff'),
-             url(/fonts/markwebpro-bold-w01-regular/markwebpro-bold-w01-regular.woff2) format('woff2');
+        src: url(/fonts/markwebpro-bold-w01-regular/markwebpro-bold-w01-regular.woff)
+            format('woff'),
+          url(/fonts/markwebpro-bold-w01-regular/markwebpro-bold-w01-regular.woff2)
+            format('woff2');
       }
     `}</style>
 
@@ -43,8 +46,8 @@ const TemplateWrapper = ({ children, lang, data }) => (
 
 export default class extends Component {
   render() {
-    const { data } = this.props;
-    const lang = langFromPath(this.props.location.pathname);
+    const { data } = this.props
+    const lang = langFromPath(this.props.location.pathname)
 
     return (
       <I18nProvider language={lang} catalogs={catalogs}>
@@ -58,9 +61,9 @@ export const query = graphql`
   query SiteTitleQuery {
     site {
       siteMetadata {
-        title,
+        title
         description
       }
     }
   }
-`;
+`

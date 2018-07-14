@@ -1,15 +1,20 @@
-import React from 'react';
+import React from 'react'
 
-import styles from './styles';
+import styles from './styles'
 
 const Imprint = () => (
-    <address className="imprint">
-        <style jsx>{styles}</style>
+  <address className="imprint">
+    <style jsx>{styles}</style>
 
-        <span className="imprint__line">Zoff</span>
-        <span className="imprint__line">Lausitzer Straße 22</span>
-        <span className="imprint__line">10999 Berlin</span>
-    </address>
-);
+    <span className="imprint__line">Zoff</span>
+    <span className="imprint__line">Lausitzer Straße 22</span>
+    <span className="imprint__line">10999 Berlin</span>
+    <span className="imprint__line">
+      <a href="mailto:kontakt@zoff-kollektiv.net" className="imprint__link">
+        kontakt@zoff-kollektiv.net
+      </a>
+    </span>
+  </address>
+)
 
-export default Imprint;
+export default Imprint
