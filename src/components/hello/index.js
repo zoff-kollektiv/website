@@ -10,10 +10,8 @@ const Hello = ({ title }) => (
     <style jsx>{styles}</style>
     <img
       src={image1}
-      srcset={`
-            ${image1} 1000w
-         `}
       className="hello__image"
+      alt=""
     />
     <h1 className="hello__title">{title}</h1>
   </header>

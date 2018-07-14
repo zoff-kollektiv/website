@@ -1,6 +1,10 @@
 const SCREEN_SIZES = [['mobile', 400]]
 
 export default {
+  colors: {
+    red: 'red',
+  },
+
   fonts: {
     mark: {
       name: 'MarkWebPro',

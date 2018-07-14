@@ -1,5 +1,5 @@
 import css from 'styled-jsx/css'
-import { fonts, mq } from '../../tokens'
+import { fonts, mq, colors } from '../../tokens'
 
 export default css`
   .hello {
@@ -9,7 +9,7 @@ export default css`
   }
 
   .hello__title {
-    color: red;
+    color: ${colors.red};
     font-family: ${fonts.mark.family};
     font-weight: ${fonts.mark.weight.bold};
     font-size: 5rem;
