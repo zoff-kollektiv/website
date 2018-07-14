@@ -21,7 +21,7 @@ export default css`
     transform: translate(-50%, -50%);
   }
 
-  @media ${mq.mobile} {
+  @media ${mq.tabletLandscape} {
     .hello__title {
       font-size: 17rem;
     }
