@@ -1,21 +1,10 @@
 import React from 'react';
 
+import styles from './styles';
+
 const Imprint = () => (
     <address className="imprint">
-        <style jsx>{`
-            .imprint {
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                font-style: normal;
-                height: 100vh;
-                justify-content: center;
-            }
-
-            .imprint__line {
-                display: block;
-            }
-        `}</style>
+        <style jsx>{styles}</style>
 
         <span className="imprint__line">Zoff</span>
         <span className="imprint__line">Lausitzer Straße 22</span>
