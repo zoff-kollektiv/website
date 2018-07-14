@@ -1,3 +1,7 @@
+const SCREEN_SIZES = [
+  ['mobile', 400],
+];
+
 export default {
   fonts: {
     mark: {
@@ -8,4 +12,9 @@ export default {
       },
     },
   },
+
+  mq: SCREEN_SIZES.reduce((acc, screen) => {
+    acc[screen[0]] = `screen and (min-width: ${screen[1]}px)`;
+    return acc;
+  }, {})
 }
