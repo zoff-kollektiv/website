@@ -1,34 +1,43 @@
 {
-  "name": "zoff-website",
-  "description": "Website of the zoff collective",
+  "name": "gatsby-starter-i18n-lingui",
+  "description": "Gatsby starter with i18n/l10n support using js-lingui.",
   "version": "1.0.0",
-  "private": true,
-  "author": "Gustav Pursche <pursche@posteo.de>",
-  "dependencies": {
-    "babel-plugin-styled-components": "^1.5.1",
-    "gatsby": "^1.9.247",
-    "gatsby-link": "^1.6.40",
-    "gatsby-plugin-react-helmet": "^2.0.10",
-    "gatsby-plugin-sass": "^1.0.26",
-    "gatsby-plugin-styled-components": "^2.0.11",
-    "i18next": "^11.3.6",
-    "i18next-browser-languagedetector": "^2.2.0",
-    "i18next-xhr-backend": "^1.5.1",
-    "react-helmet": "^5.2.0",
-    "react-i18next": "^7.8.1",
-    "styled-components": "^3.3.3"
-  },
+  "author": "Denis Croitoru <dennis.croitoru@gmail.com>",
+  "keywords": [
+    "gatsby",
+    "js-lingui",
+    "react",
+    "i18n"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write 'src/**/*.js'"
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "extract": "cross-env BABEL_ENV=extract lingui extract --clean"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.42",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.42",
+    "@babel/preset-react": "^7.0.0-beta.42",
+    "@lingui/babel-preset-react": "^2.0.5",
+    "@lingui/react": "^2.0.5",
+    "cross-env": "^5.1.4",
+    "gatsby": "^1.9.241",
+    "gatsby-link": "^1.6.39",
+    "gatsby-plugin-react-helmet": "^2.0.8",
+    "gatsby-plugin-react-next": "^1.0.11",
+    "react-helmet": "^5.2.0"
   },
   "devDependencies": {
-    "prettier": "^1.12.0"
+    "prettier": "^1.11.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zoff-collective/website"
+  "lingui": {
+    "fallbackLocale": "de",
+    "sourceLocale": "de",
+    "localeDir": "src/locale",
+    "format": "minimal"
   }
 }

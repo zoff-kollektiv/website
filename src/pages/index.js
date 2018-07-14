@@ -1,41 +1,20 @@
-import React, { Component } from 'react';
-import { translate } from "react-i18next";
+import React from 'react';
+import Link from 'gatsby-link';
+import { Trans, withI18n } from '@lingui/react';
 
-import Hello from '../components/hello';
+const IndexPage = ({ i18n }) => (
+  <div>
+    <h1>
+      <Trans>Hi people</Trans>
+    </h1>
+    <p>
+      <Trans>Welcome to your new Gatsby site.</Trans>
+    </p>
+    <Trans render="p">Now go build something great.</Trans>
+    <Link to={i18n.t`/page-2`}>
+      <Trans>Go to page 2</Trans>
+    </Link>
+  </div>
+)
 
-class HelloSection extends Component {
-  constructor(props) {
-    super(props);
-    const { i18n } = this.props;
-    this.state = { language: i18n.language };
-  }
-
-  componentWillReceiveProps(nextProps) {
-    this.setState({ language: nextProps.i18n.language });
-  }
-
-  handleChangeLanguage(lng) {
-    const { i18n } = this.props;
-    i18n.changeLanguage(lng);
-  }
-
-  render() {
-    const { t } = this.props;
-
-    return (
-      <div>
-        <button onClick={() => this.handleChangeLanguage('de')}>
-          {t('german')}
-        </button>
-
-        <button onClick={() => this.handleChangeLanguage('en')}>
-          {t('english')}
-        </button>
-
-        <Hello text={t('title')} />
-      </div>
-    );
-  }
-}
-
-export default translate('hello')(HelloSection);
+export default withI18n()(IndexPage)
