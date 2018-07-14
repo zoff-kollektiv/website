@@ -4,7 +4,6 @@ import { fonts, mq } from '../../tokens'
 export default css`
   .hello {
     align-items: center;
-    background-color: red;
     display: flex;
     height: 100vh;
     justify-content: center;
