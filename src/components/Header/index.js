@@ -9,16 +9,14 @@ const Lang = ({ lang, selected }) => (
 )
 
 const Header = props => (
-  <div>
-    <div>
-      <h1>
-        <Trans>Zoff collective</Trans>
-      </h1>
+  <header>
+    <h1>
+      <Trans>Zoff collective</Trans>
+    </h1>
 
-      <Lang lang="de" selected={props.lang === 'de'} />
-      <Lang lang="en" selected={props.lang === 'en'} />
-    </div>
-  </div>
+    <Lang lang="de" selected={props.lang === 'de'} />
+    <Lang lang="en" selected={props.lang === 'en'} />
+  </header>
 )
 
 export default withI18n()(Header);

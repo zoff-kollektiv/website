@@ -1,37 +1,49 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { I18nProvider } from '@lingui/react'
-import Header from '../components/Header'
-import { catalogs, langFromPath } from '../i18n-config'
+import React, { Fragment } from 'react';
+import Helmet from 'react-helmet';
+import { I18nProvider } from '@lingui/react';
 
-const TemplateWrapper = ({ children, lang }) => (
-  <div>
+import Header from '../components/Header';
+import { catalogs, langFromPath } from '../i18n-config';
+
+const TemplateWrapper = ({ children, lang, data }) => (
+  <Fragment>
     <Helmet
-      title="Gatsby Default Starter"
+      title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        {
+          name: 'description',
+          content: data.site.siteMetadata.description,
+        },
       ]}
     />
+
     <Header lang={lang} />
-
-    <div>{children()}</div>
-  </div>
+    <main>
+      {children()}
+    </main>
+  </Fragment>
 )
-
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
-}
 
 export default class extends React.Component {
   render() {
+    const { data } = this.props;
     const lang = langFromPath(this.props.location.pathname);
 
     return (
       <I18nProvider language={lang} catalogs={catalogs}>
-        <TemplateWrapper {...this.props} lang={lang} />
+        <TemplateWrapper {...this.props} lang={lang} data={data} />
       </I18nProvider>
     )
   }
 }
+
+export const query = graphql`
+  query SiteTitleQuery {
+    site {
+      siteMetadata {
+        title,
+        description
+      }
+    }
+  }
+`;
