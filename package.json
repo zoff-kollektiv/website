@@ -1,20 +1,14 @@
 {
-  "name": "gatsby-starter-i18n-lingui",
-  "description": "Gatsby starter with i18n/l10n support using js-lingui.",
+  "name": "zoff-collective",
+  "description": "Website of the zoff visual communication collective",
   "version": "1.0.0",
-  "author": "Denis Croitoru <dennis.croitoru@gmail.com>",
-  "keywords": [
-    "gatsby",
-    "js-lingui",
-    "react",
-    "i18n"
-  ],
+  "author": "Gustav Pursche <pursche@posteo.de>",
+  "private": true,
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "extract": "cross-env BABEL_ENV=extract lingui extract --clean"
   },
   "dependencies": {
