@@ -1,4 +1,4 @@
-const SCREEN_SIZES = [['mobile', 400]]
+const SCREEN_SIZES = [['mobile', 400], ['tabletLandscape', 960]]
 
 export default {
   colors: {
