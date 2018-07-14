@@ -3,23 +3,31 @@ import { fonts, mq } from '../../tokens'
 
 export default css`
   .hello {
-    align-items: center;
-    display: flex;
     height: 100vh;
-    justify-content: center;
+    overflow: hidden;
+    position: relative;
   }
 
   .hello__title {
+    color: red;
     font-family: ${fonts.mark.family};
     font-weight: ${fonts.mark.weight.bold};
-    font-size: 4rem;
+    font-size: 5rem;
+    left: 50%;
     margin-bottom: 0;
     margin-top: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hello__image {
+    width: 100%;
   }
 
   @media ${mq.mobile} {
     .hello__title {
-      font-size: 8rem;
+      font-size: 17rem;
     }
   }
 `
