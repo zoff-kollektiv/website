@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Zoff',
+    description: 'Zoff collective',
   },
-  plugins: ['gatsby-plugin-react-helmet'],
-}
+  plugins: [
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-react-next',
+  ],
+};
