@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'gatsby-link';
 import { withI18n } from '@lingui/react';
 
+import { fonts } from '../../tokens';
+
 const Hello = ({ title }) => (
   <header className="hello">
     <style jsx>{`
@@ -13,6 +15,8 @@ const Hello = ({ title }) => (
       }
 
       .hello__title {
+        font-family: ${fonts.mark.family};
+        font-weight: ${fonts.mark.weight.bold};
         font-size: 8rem;
         margin-bottom: 0;
         margin-top: 0;
