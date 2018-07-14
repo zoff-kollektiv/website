@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Component, Fragment } from 'react';
 import Helmet from 'react-helmet';
 import { I18nProvider } from '@lingui/react';
 
@@ -18,13 +18,14 @@ const TemplateWrapper = ({ children, lang, data }) => (
     />
 
     <Header lang={lang} />
+
     <main>
       {children()}
     </main>
   </Fragment>
 )
 
-export default class extends React.Component {
+export default class extends Component {
   render() {
     const { data } = this.props;
     const lang = langFromPath(this.props.location.pathname);
