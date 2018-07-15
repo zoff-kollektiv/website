@@ -8,7 +8,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write 'src/**/*.js'",
+    "format": "prettier --write 'src/**/*.js' '*.js'",
     "extract": "cross-env BABEL_ENV=extract lingui extract --clean"
   },
   "dependencies": {
@@ -29,6 +29,9 @@
     "@babel/preset-react": "^7.0.0-beta.53",
     "@lingui/babel-preset-react": "^2.2.0",
     "@lingui/cli": "^2.2.0",
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-remark": "^1.7.44",
+    "pre-commit": "^1.2.2",
     "prettier": "^1.13.7"
   },
   "lingui": {
@@ -36,5 +39,8 @@
     "sourceLocale": "de",
     "localeDir": "src/locale",
     "format": "minimal"
-  }
+  },
+  "pre-commit": [
+    "format"
+  ]
 }
