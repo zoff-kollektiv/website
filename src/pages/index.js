@@ -24,7 +24,12 @@ const IndexPage = ({ data }) => {
 
 export const projectQuery = graphql`
   query allPrinciples {
-    allMarkdownRemark {
+    allMarkdownRemark(
+      sort: {
+        order: DESC,
+        fields: [frontmatter___index]
+      }
+    ) {
       edges {
         node {
           frontmatter {
