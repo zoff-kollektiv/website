@@ -1,6 +1,6 @@
 import css from 'styled-jsx/css'
 
-import { fonts } from '../../tokens';
+import { fonts } from '../../tokens'
 
 export default css`
   .principles {
@@ -14,12 +14,12 @@ export default css`
   }
 
   .principles__title {
-      color: white;
-      font-family: ${fonts.mark.family};
-      margin-bottom: 4rem;
-      margin-top: 0;
-      text-align: center;
-      text-transform: uppercase;
+    color: white;
+    font-family: ${fonts.mark.family};
+    margin-bottom: 4rem;
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   .principles__list {
