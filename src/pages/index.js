@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => (
         'Zoff ist ein berliner Kollektiv, welches visuelle Kommunikationswerkzeuge im Kontext von politischen, sozialen, kulturellen und Bildungsprojekten entwickelt.',
       ]}
     />
-    <Principles data={data.allMarkdownRemark} />
+    <Principles edges={data.allMarkdownRemark.edges} />
     <Imprint />
   </Fragment>
 )
@@ -23,6 +23,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___index] }) {
       edges {
         node {
+          fileAbsolutePath
           frontmatter {
             title
           }

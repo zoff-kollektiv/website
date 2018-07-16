@@ -19,6 +19,7 @@ export default css`
   }
 
   .principle__title-text {
+    color: white;
     display: block;
     font-family: ${fonts.mark.family};
     font-size: 3rem;
