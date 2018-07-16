@@ -6,7 +6,7 @@ const What = ({ paragraphs }) => (
     <section className="what">
         <style jsx>{styles}</style>
 
-        {paragraphs.map(_ => <p className="what__paragraph">{_}</p>)}
+        {paragraphs.map(_ => <p key={_} className="what__paragraph">{_}</p>)}
     </section>
 );
 
