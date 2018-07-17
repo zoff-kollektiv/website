@@ -23,6 +23,7 @@ const createPrinciplesPage = (createPage, graphql) =>
         path: `/principles/${path.basename(node.fileAbsolutePath, '.md')}`,
         component: path.resolve('src/templates/principle/index.jsx'),
         context: {},
+        layout: 'page',
       })
     })
   })
