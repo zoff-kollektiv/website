@@ -2,10 +2,10 @@ import React, { Fragment } from 'react'
 
 import Hello from '../components/hello'
 import Imprint from '../components/imprint'
-import Principles from '../templates/principles'
+import Principles from '../components/principles'
 import What from '../components/what'
 
-const IndexPage = ({ data }) => (
+export default ({ data }) => (
   <Fragment>
     <Hello title="Zoff" />
     <What
@@ -13,14 +13,14 @@ const IndexPage = ({ data }) => (
         'Zoff ist ein berliner Kollektiv, welches visuelle Kommunikationswerkzeuge im Kontext von politischen, sozialen, kulturellen und Bildungsprojekten entwickelt.',
       ]}
     />
-    <Principles edges={data.allMarkdownRemark.edges} />
+    <Principles edges={data.allMarkdownRemark.edges} showAll={true} />
     <Imprint />
   </Fragment>
 )
 
-export const pageQuery = graphql`
-  query AllPrinciples {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___index] }) {
+export const query = graphql`
+  query AllPrinciplesIndex {
+    allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___index] }) {
       edges {
         node {
           fileAbsolutePath
@@ -32,5 +32,3 @@ export const pageQuery = graphql`
     }
   }
 `
-
-export default IndexPage

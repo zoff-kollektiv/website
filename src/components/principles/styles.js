@@ -13,13 +13,22 @@ export default css`
     padding-top: 4rem;
   }
 
-  .principles__title {
+  .principles__title,
+  .principles__more {
     color: white;
     font-family: ${fonts.mark.family};
-    margin-bottom: 4rem;
-    margin-top: 0;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  .principles__title {
+    margin-bottom: 4rem;
+    margin-top: 0;
+  }
+
+  .principles__more {
+    margin-bottom: 0;
+    margin-top: 4rem;
   }
 
   .principles__list {

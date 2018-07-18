@@ -1,9 +1,10 @@
+import Link from 'gatsby-link'
 import React from 'react'
 
 import Principle from './principle'
 import styles from './styles'
 
-const Principles = ({ edges }) => {
+export default ({ edges, showAll = false }) => {
   return (
     <section className="principles">
       <style jsx>{styles}</style>
@@ -18,19 +19,17 @@ const Principles = ({ edges }) => {
                 key={_.node.frontmatter.title}
                 className="principles__list-item"
               >
-                <Principle
-                  index={index + 1}
-                  path={`/principles/${
-                    /([a-z-]+).md$/.exec(_.node.fileAbsolutePath)[1]
-                  }`}
-                  {..._.node.frontmatter}
-                />
+                <Principle index={index + 1} {..._.node.frontmatter} />
               </li>
             )
           })}
       </ul>
+
+      {showAll && (
+        <span className="principles__more">
+          <Link to={'/principles/'}>Mehr über unsere Arbeitsprinzipien</Link>
+        </span>
+      )}
     </section>
   )
 }
-
-export default Principles
