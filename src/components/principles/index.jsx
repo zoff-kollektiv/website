@@ -33,3 +33,16 @@ export default ({ edges, showAll = false }) => {
     </section>
   )
 }
+
+export const fragment = graphql`
+  fragment principles on MarkdownRemarkConnection {
+    edges {
+      node {
+        fileAbsolutePath
+        frontmatter {
+          title
+        }
+      }
+    }
+  }
+`

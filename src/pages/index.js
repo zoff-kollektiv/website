@@ -20,15 +20,8 @@ export default ({ data }) => (
 
 export const query = graphql`
   query AllPrinciplesIndex {
-    allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___index] }) {
-      edges {
-        node {
-          fileAbsolutePath
-          frontmatter {
-            title
-          }
-        }
-      }
+    allMarkdownRemark(limit: 6, sort: { fields: [frontmatter___index] }) {
+      ...principles
     }
   }
 `

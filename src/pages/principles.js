@@ -12,15 +12,8 @@ export default ({ data }) => (
 
 export const query = graphql`
   query AllPrinciplesPage {
-    allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___index] }) {
-      edges {
-        node {
-          fileAbsolutePath
-          frontmatter {
-            title
-          }
-        }
-      }
+    allMarkdownRemark(sort: { fields: [frontmatter___index] }) {
+      ...principles
     }
   }
 `
