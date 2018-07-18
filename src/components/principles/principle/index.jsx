@@ -1,9 +1,8 @@
-import Link from 'gatsby-link'
 import React from 'react'
 
 import styles from './styles'
 
-const Project = ({ title, index, path }) => (
+export default ({ title, index, path }) => (
   <div className="principle">
     <style jsx>{styles}</style>
     <h2 className="principle__title">
@@ -11,11 +10,7 @@ const Project = ({ title, index, path }) => (
         {index < 10 ? '0' + index : index}
       </small>
 
-      <Link to={path}>
-        <a className="principle__title-text">{title}</a>
-      </Link>
+      <span className="principle__title-text">{title}</span>
     </h2>
   </div>
 )
-
-export default Project

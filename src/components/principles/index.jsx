@@ -3,7 +3,7 @@ import React from 'react'
 import Principle from './principle'
 import styles from './styles'
 
-const Principles = ({ edges }) => {
+export default ({ edges }) => {
   return (
     <section className="principles">
       <style jsx>{styles}</style>
@@ -18,13 +18,7 @@ const Principles = ({ edges }) => {
                 key={_.node.frontmatter.title}
                 className="principles__list-item"
               >
-                <Principle
-                  index={index + 1}
-                  path={`/principles/${
-                    /([a-z-]+).md$/.exec(_.node.fileAbsolutePath)[1]
-                  }`}
-                  {..._.node.frontmatter}
-                />
+                <Principle index={index + 1} {..._.node.frontmatter} />
               </li>
             )
           })}
@@ -32,5 +26,3 @@ const Principles = ({ edges }) => {
     </section>
   )
 }
-
-export default Principles
