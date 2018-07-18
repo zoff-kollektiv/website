@@ -14,14 +14,20 @@ export default ({ data }) => (
       ]}
     />
     <Principles edges={data.allMarkdownRemark.edges} showAll={true} />
-    <Imprint />
+    <Imprint email={data.site.siteMetadata.email} />
   </Fragment>
 )
 
 export const query = graphql`
-  query AllPrinciplesIndex {
+  query IndexPageQuery {
     allMarkdownRemark(limit: 6, sort: { fields: [frontmatter___index] }) {
       ...principles
+    }
+
+    site {
+      siteMetadata {
+        email
+      }
     }
   }
 `

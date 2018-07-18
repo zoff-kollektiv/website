@@ -35,7 +35,7 @@ export default class extends Component {
 }
 
 export const query = graphql`
-  query IndexPageQuery {
+  query LayoutQuery {
     site {
       siteMetadata {
         title
