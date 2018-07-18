@@ -1,9 +1,10 @@
+import Link from 'gatsby-link'
 import React from 'react'
 
 import Principle from './principle'
 import styles from './styles'
 
-export default ({ edges }) => {
+export default ({ edges, showAll = false }) => {
   return (
     <section className="principles">
       <style jsx>{styles}</style>
@@ -23,6 +24,12 @@ export default ({ edges }) => {
             )
           })}
       </ul>
+
+      {showAll && (
+        <span className="principles__more">
+          <Link to={'/principles/'}>Mehr über unsere Arbeitsprinzipien</Link>
+        </span>
+      )}
     </section>
   )
 }

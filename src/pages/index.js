@@ -13,7 +13,7 @@ export default ({ data }) => (
         'Zoff ist ein berliner Kollektiv, welches visuelle Kommunikationswerkzeuge im Kontext von politischen, sozialen, kulturellen und Bildungsprojekten entwickelt.',
       ]}
     />
-    <Principles edges={data.allMarkdownRemark.edges} />
+    <Principles edges={data.allMarkdownRemark.edges} showAll={true} />
     <Imprint />
   </Fragment>
 )

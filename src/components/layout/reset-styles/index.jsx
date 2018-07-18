@@ -13,6 +13,10 @@ const ResetStyles = () => (
       margin: 0;
       padding: 0;
     }
+
+    a {
+      color: currentColor;
+    }
   `}</style>
 )
 
