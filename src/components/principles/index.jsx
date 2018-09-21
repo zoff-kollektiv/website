@@ -4,7 +4,7 @@ import React from 'react'
 import Principle from './principle'
 import styles from './styles'
 
-export default ({ edges, showAll = false }) => {
+export default ({ edges }) => {
   return (
     <section className="principles">
       <style jsx>{styles}</style>
@@ -24,12 +24,6 @@ export default ({ edges, showAll = false }) => {
             )
           })}
       </ul>
-
-      {showAll && (
-        <span className="principles__more">
-          <Link to={'/principles/'}>Mehr über unsere Arbeitsprinzipien</Link>
-        </span>
-      )}
     </section>
   )
 }
