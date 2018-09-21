@@ -6,8 +6,13 @@ export default css`
   .what {
     align-items: center;
     display: flex;
+    flex-direction: column;
     height: 100vh;
     justify-content: center;
+  }
+
+  .what--theme-red {
+    background-color: ${colors.red};
   }
 
   .what__paragraph {
@@ -19,6 +24,10 @@ export default css`
     width: 100%;
   }
 
+  .what--theme-red .what__paragraph {
+    color: white;
+  }
+
   @media ${mq.tabletLandscape} {
     .what__paragraph {
       font-size: 2.4rem;
@@ -26,5 +35,14 @@ export default css`
       margin-right: 4rem;
       max-width: 1000px;
     }
+  }
+
+  .what__more {
+    color: white;
+    font-family: ${fonts.mark.family};
+    margin-bottom: 0;
+    margin-top: 4rem;
+    text-align: center;
+    text-transform: uppercase;
   }
 `

@@ -10,10 +10,27 @@ export default ({ data }) => (
     <Hello title="Zoff" />
     <What
       paragraphs={[
-        'Zoff ist ein berliner Kollektiv, welches visuelle Kommunikationswerkzeuge im Kontext von politischen, sozialen, kulturellen und Bildungsprojekten entwickelt.',
+        `
+          Zoff ist ein berliner Kollektiv, welches visuelle Kommunikationswerkzeuge
+          im Kontext von politischen, sozialen, kulturellen und Bildungsprojekten
+          entwickelt.
+        `,
       ]}
     />
+
+    <What
+      theme="red"
+      paragraphs={[
+        `
+          Was uns interessiert, ist die soziale Nutzung von Bildern.
+        `,
+      ]}
+      moreHref="/"
+      moreLabel="Case studies pdf laden"
+    />
+
     <Principles edges={data.allMarkdownRemark.edges} />
+
     <Imprint email={data.site.siteMetadata.email} />
   </Fragment>
 )
