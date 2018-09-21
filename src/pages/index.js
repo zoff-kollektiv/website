@@ -18,7 +18,10 @@ export default ({ data }) => (
       ]}
     />
 
-    <What
+    
+    <Principles edges={data.allMarkdownRemark.edges} />
+  
+  <What
       theme="red"
       paragraphs={[
         `
@@ -29,7 +32,6 @@ export default ({ data }) => (
       moreLabel="Case studies pdf laden"
     />
 
-    <Principles edges={data.allMarkdownRemark.edges} />
 
     <Imprint email={data.site.siteMetadata.email} />
   </Fragment>
