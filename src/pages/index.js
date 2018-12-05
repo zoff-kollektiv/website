@@ -2,8 +2,6 @@ import React, { Fragment } from 'react'
 
 import Hello from '../components/hello'
 import Imprint from '../components/imprint'
-import Principles from '../components/principles'
-import What from '../components/what'
 
 export default ({ data }) => (
   <Fragment>
@@ -17,21 +15,6 @@ export default ({ data }) => (
         `,
       ]}
     />
-
-    
-    <Principles edges={data.allMarkdownRemark.edges} />
-  
-  <What
-      theme="red"
-      paragraphs={[
-        `
-          Was uns interessiert, ist die soziale Nutzung von Bildern.
-        `,
-      ]}
-      moreHref="/"
-      moreLabel="Case studies pdf laden"
-    />
-
 
     <Imprint email={data.site.siteMetadata.email} />
   </Fragment>
