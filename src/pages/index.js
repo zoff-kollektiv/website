@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 
 import Hello from '../components/hello'
 import Imprint from '../components/imprint'
+import What from '../components/what'
 
 export default ({ data }) => (
   <Fragment>
