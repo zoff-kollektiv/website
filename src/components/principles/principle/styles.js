@@ -1,6 +1,6 @@
-import css from 'styled-jsx/css'
+import css from "styled-jsx/css";
 
-import { fonts } from '../../../tokens'
+import { fonts } from "../../../tokens";
 
 export default css`
   .principle {
@@ -13,7 +13,7 @@ export default css`
   }
 
   .principle__title-index::before {
-    content: '#';
+    content: "#";
     font-family: ${fonts.mark.family};
     margin-right: 0.2rem;
   }
@@ -27,4 +27,4 @@ export default css`
     margin-top: 0.75rem;
     text-decoration: underline;
   }
-`
+`;

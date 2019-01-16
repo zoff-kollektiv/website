@@ -1,5 +1,5 @@
-import css from 'styled-jsx/css'
-import { fonts, mq, colors } from '../../tokens'
+import css from "styled-jsx/css";
+import { fonts, mq, colors } from "../../tokens";
 
 export default css`
   .hello {
@@ -38,4 +38,4 @@ export default css`
       width: 100%;
     }
   }
-`
+`;

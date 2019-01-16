@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-import styles from './styles'
+import styles from "./styles";
 
 const Imprint = ({ email }) => (
   <address className="imprint">
@@ -16,6 +16,6 @@ const Imprint = ({ email }) => (
       </a>
     </span>
   </address>
-)
+);
 
-export default Imprint
+export default Imprint;

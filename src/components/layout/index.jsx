@@ -1,19 +1,19 @@
-import Helmet from 'react-helmet'
-import React, { Fragment } from 'react'
+import Helmet from "react-helmet";
+import React, { Fragment } from "react";
 
-import Fonts from './fonts'
-import ResetStyles from './reset-styles'
+import Fonts from "./fonts";
+import ResetStyles from "./reset-styles";
 
 const Layout = ({ children }) => (
   <Fragment>
     <Helmet
       link={[
         {
-          rel: 'preload',
+          rel: "preload",
           href:
-            '/fonts/markwebpro-bold-w01-regular/markwebpro-bold-w01-regular.woff2',
-          as: 'font',
-        },
+            "/fonts/markwebpro-bold-w01-regular/markwebpro-bold-w01-regular.woff2",
+          as: "font"
+        }
       ]}
     />
 
@@ -21,6 +21,6 @@ const Layout = ({ children }) => (
     <ResetStyles />
     {children}
   </Fragment>
-)
+);
 
-export default Layout
+export default Layout;

@@ -1,6 +1,6 @@
-import css from 'styled-jsx/css'
+import css from "styled-jsx/css";
 
-import { colors, fonts, mq } from '../../tokens'
+import { colors, fonts, mq } from "../../tokens";
 
 export default css`
   .what {
@@ -45,4 +45,4 @@ export default css`
     text-align: center;
     text-transform: uppercase;
   }
-`
+`;

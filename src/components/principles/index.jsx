@@ -1,8 +1,8 @@
-import { graphql } from 'gatsby';
-import React from 'react'
+import { graphql } from "gatsby";
+import React from "react";
 
-import Principle from './principle'
-import styles from './styles'
+import Principle from "./principle";
+import styles from "./styles";
 
 export default ({ edges }) => {
   return (
@@ -21,12 +21,12 @@ export default ({ edges }) => {
               >
                 <Principle index={index + 1} {..._.node.frontmatter} />
               </li>
-            )
+            );
           })}
       </ul>
     </section>
-  )
-}
+  );
+};
 
 export const fragment = graphql`
   fragment principles on MarkdownRemarkConnection {
@@ -39,4 +39,4 @@ export const fragment = graphql`
       }
     }
   }
-`
+`;

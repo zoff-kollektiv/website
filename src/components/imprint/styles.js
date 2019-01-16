@@ -1,6 +1,6 @@
-import css from 'styled-jsx/css'
+import css from "styled-jsx/css";
 
-import { fonts, colors } from '../../tokens'
+import { fonts, colors } from "../../tokens";
 
 export default css`
   .imprint {
@@ -29,4 +29,4 @@ export default css`
   .imprint__link:focus {
     text-decoration: underline;
   }
-`
+`;

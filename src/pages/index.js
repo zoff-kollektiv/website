@@ -1,10 +1,10 @@
-import { graphql } from 'gatsby';
-import React, { Fragment } from 'react'
+import { graphql } from "gatsby";
+import React, { Fragment } from "react";
 
-import Hello from '../components/hello'
-import Imprint from '../components/imprint'
-import Principles from '../components/principles'
-import What from '../components/what'
+import Hello from "../components/hello";
+import Imprint from "../components/imprint";
+import Principles from "../components/principles";
+import What from "../components/what";
 
 export default ({ data }) => (
   <Fragment>
@@ -15,7 +15,7 @@ export default ({ data }) => (
           Zoff ist ein berliner Kollektiv, welches visuelle Kommunikationswerkzeuge
           im Kontext von politischen, sozialen, kulturellen und Bildungsprojekten
           entwickelt.
-        `,
+        `
       ]}
     />
 
@@ -24,7 +24,7 @@ export default ({ data }) => (
       paragraphs={[
         `
           Was uns interessiert, ist die soziale Nutzung von Bildern.
-        `,
+        `
       ]}
       moreHref="/"
       moreLabel="Case studies pdf laden"
@@ -34,7 +34,7 @@ export default ({ data }) => (
 
     <Imprint email={data.site.siteMetadata.email} />
   </Fragment>
-)
+);
 
 export const query = graphql`
   query IndexPageQuery {
@@ -48,4 +48,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
