@@ -10,7 +10,6 @@ export default withLayout(({ data }) => (
   <Fragment>
     <Hello title="Zoff" />
     <What
-      theme="red"
       paragraphs={[
         `
           Zoff ist ein berliner Kollektiv, welches visuelle Kommunikationswerkzeuge
