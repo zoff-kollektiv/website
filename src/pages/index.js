@@ -1,3 +1,4 @@
+import { graphql } from 'gatsby';
 import React, { Fragment } from 'react'
 
 import Hello from '../components/hello'

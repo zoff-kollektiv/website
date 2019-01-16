@@ -1,3 +1,4 @@
+import { graphql } from 'gatsby';
 import React, { Component, Fragment } from 'react'
 import Helmet from 'react-helmet'
 import { I18nProvider } from '@lingui/react'
