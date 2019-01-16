@@ -3,9 +3,14 @@ import { fonts, mq, colors } from "../../tokens";
 
 export default css`
   .hello {
-    height: 100vh;
     overflow: hidden;
     position: relative;
+  }
+
+  @media ${mq.tabletLandscape} {
+    .hello {
+      height: 100vh;
+    }
   }
 
   .hello__title {

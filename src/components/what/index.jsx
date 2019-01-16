@@ -3,7 +3,7 @@ import React from "react";
 
 import styles from "./styles";
 
-const What = ({ paragraphs, theme = "white", moreHref, moreLabel }) => (
+const What = ({ paragraphs, theme = "white" }) => (
   <section className={`what what--theme-${theme}`}>
     <style jsx>{styles}</style>
     {paragraphs.map(_ => (
@@ -11,10 +11,6 @@ const What = ({ paragraphs, theme = "white", moreHref, moreLabel }) => (
         {_}
       </p>
     ))}
-    <span className="what__more">
-      <Link to={moreHref}>{moreLabel}</Link>
-    </span>
-    ,
   </section>
 );
 

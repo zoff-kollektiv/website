@@ -3,10 +3,10 @@ import React, { Fragment } from "react";
 
 import Hello from "../components/hello";
 import Imprint from "../components/imprint";
-import Principles from "../components/principles";
 import What from "../components/what";
+import withLayout from "../components/with-layout";
 
-export default ({ data }) => (
+export default withLayout(({ data }) => (
   <Fragment>
     <Hello title="Zoff" />
     <What
@@ -19,22 +19,9 @@ export default ({ data }) => (
       ]}
     />
 
-    <What
-      theme="red"
-      paragraphs={[
-        `
-          Was uns interessiert, ist die soziale Nutzung von Bildern.
-        `
-      ]}
-      moreHref="/"
-      moreLabel="Case studies pdf laden"
-    />
-
-    <Principles edges={data.allMarkdownRemark.edges} />
-
     <Imprint email={data.site.siteMetadata.email} />
   </Fragment>
-);
+));
 
 export const query = graphql`
   query IndexPageQuery {
