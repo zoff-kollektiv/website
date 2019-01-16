@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-import { fonts } from '../../../tokens'
+import { fonts } from "../../../tokens";
 
 const Fonts = () => (
   <style jsx global>{`
@@ -8,11 +8,11 @@ const Fonts = () => (
       font-family: ${fonts.mark.name};
       font-weight: ${fonts.mark.weight.bold};
       src: url(/fonts/markwebpro-bold-w01-regular/markwebpro-bold-w01-regular.woff)
-          format('woff'),
+          format("woff"),
         url(/fonts/markwebpro-bold-w01-regular/markwebpro-bold-w01-regular.woff2)
-          format('woff2');
+          format("woff2");
     }
   `}</style>
-)
+);
 
-export default Fonts
+export default Fonts;

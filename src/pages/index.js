@@ -1,10 +1,12 @@
-import React, { Fragment } from 'react'
+import { graphql } from "gatsby";
+import React, { Fragment } from "react";
 
-import Hello from '../components/hello'
-import Imprint from '../components/imprint'
-import What from '../components/what'
+import Hello from "../components/hello";
+import Imprint from "../components/imprint";
+import What from "../components/what";
+import withLayout from "../components/with-layout";
 
-export default ({ data }) => (
+export default withLayout(({ data }) => (
   <Fragment>
     <Hello title="Zoff" />
     <What
@@ -20,7 +22,7 @@ export default ({ data }) => (
 
     <Imprint email={data.site.siteMetadata.email} />
   </Fragment>
-)
+));
 
 export const query = graphql`
   query IndexPageQuery {
@@ -34,4 +36,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

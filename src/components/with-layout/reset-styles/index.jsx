@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const ResetStyles = () => (
   <style jsx global>{`
@@ -18,6 +18,6 @@ const ResetStyles = () => (
       color: currentColor;
     }
   `}</style>
-)
+);
 
-export default ResetStyles
+export default ResetStyles;

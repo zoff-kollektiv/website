@@ -1,11 +1,16 @@
-import css from 'styled-jsx/css'
-import { fonts, mq, colors } from '../../tokens'
+import css from "styled-jsx/css";
+import { fonts, mq, colors } from "../../tokens";
 
 export default css`
   .hello {
-    height: 100vh;
     overflow: hidden;
     position: relative;
+  }
+
+  @media ${mq.tabletLandscape} {
+    .hello {
+      height: 100vh;
+    }
   }
 
   .hello__title {
@@ -38,4 +43,4 @@ export default css`
       width: 100%;
     }
   }
-`
+`;

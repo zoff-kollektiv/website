@@ -1,10 +1,10 @@
-const { languages, defaultLanguage } = require('./src/i18n-config')
+const { languages, defaultLanguage } = require("./src/i18n-config");
 
-exports.onCreatePage = async ({ page, boundActionCreators }) => {
-  const { createPage, deletePage } = boundActionCreators
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage, deletePage } = actions;
 
   return new Promise(resolve => {
-    deletePage(page)
+    deletePage(page);
 
     languages.map(language => {
       let newPage = {
@@ -14,16 +14,16 @@ exports.onCreatePage = async ({ page, boundActionCreators }) => {
           path:
             language === defaultLanguage
               ? page.path
-              : '/' + language + page.path,
+              : "/" + language + page.path,
           context: {
-            lang: language,
-          },
-        },
-      }
+            lang: language
+          }
+        }
+      };
 
-      createPage(newPage)
-    })
+      createPage(newPage);
+    });
 
-    resolve()
-  })
-}
+    resolve();
+  });
+};

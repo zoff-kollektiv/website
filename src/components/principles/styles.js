@@ -1,6 +1,6 @@
-import css from 'styled-jsx/css'
+import css from "styled-jsx/css";
 
-import { fonts } from '../../tokens'
+import { fonts } from "../../tokens";
 
 export default css`
   .principles {
@@ -44,4 +44,4 @@ export default css`
   .principles__list-item:nth-child(2n + 2) {
     margin-top: 8rem;
   }
-`
+`;
