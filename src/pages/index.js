@@ -16,7 +16,7 @@ export default withLayout(({ data }) => (
           Zoff ist ein berliner Kollektiv, welches visuelle Kommunikationswerkzeuge
           im Kontext von politischen, sozialen, kulturellen und Bildungsprojekten
           entwickelt.
-        `,
+        `
       ]}
     />
 
@@ -32,7 +32,9 @@ export const query = graphql`
 
     site {
       siteMetadata {
+        title
         email
+        description
       }
     }
   }
