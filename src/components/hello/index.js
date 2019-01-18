@@ -7,7 +7,7 @@ import image1 from "./images/image-1.jpg";
 import image1Mobile from "./images/image-1--mobile.jpg";
 
 const Hello = ({ title }) => (
-  <header className="hello">
+  <section className="hello">
     <style jsx>{styles}</style>
     <img
       src={image1}
@@ -16,7 +16,7 @@ const Hello = ({ title }) => (
       alt=""
     />
     <h1 className="hello__title">{title}</h1>
-  </header>
+  </section>
 );
 
 export default withI18n()(Hello);
