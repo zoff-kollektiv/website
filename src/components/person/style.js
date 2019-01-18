@@ -4,6 +4,7 @@ import { colors, fonts, mq } from "../../tokens";
 
 export default css`
   .person {
+    align-items: flex-start;
     display: flex;
     flex-direction: row;
     padding-bottom: 1.5rem;
@@ -33,6 +34,7 @@ export default css`
   }
 
   .image-container {
+    align-self: flex-start;
     display: flex;
     justify-content: flex-start;
     flex: 1;
@@ -40,12 +42,15 @@ export default css`
   }
 
   img {
+    align-self: flex-start;
     max-width: 100%;
     object-fit: contain;
   }
 
-  .direction-rtl .image-container {
-    justify-content: flex-end;
+  @media ${mq.tabletLandscape} {
+    .direction-rtl .image-container {
+      justify-content: flex-end;
+    }
   }
 
   .title {
