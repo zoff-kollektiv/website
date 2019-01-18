@@ -9,6 +9,7 @@ import withLayout from "../components/with-layout";
 export default withLayout(({ data }) => (
   <Fragment>
     <Hello title="Zoff" />
+
     <What
       paragraphs={[
         `
@@ -24,11 +25,7 @@ export default withLayout(({ data }) => (
 ));
 
 export const query = graphql`
-  query IndexPageQuery {
-    allMarkdownRemark(limit: 6, sort: { fields: [frontmatter___index] }) {
-      ...principles
-    }
-
+  query {
     site {
       siteMetadata {
         title
