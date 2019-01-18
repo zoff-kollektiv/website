@@ -23,6 +23,10 @@ export default css`
     background-color: ${colors.red};
   }
 
+  .what--theme-red .what__paragraph {
+    color: white;
+  }
+
   .what__paragraph {
     color: ${colors.red};
     font-family: ${fonts.mark.family};
@@ -38,16 +42,28 @@ export default css`
     }
   }
 
-  .what--theme-red .what__paragraph {
-    color: white;
-  }
-
   @media ${mq.tabletLandscape} {
     .what__paragraph {
       font-size: 2.4rem;
       margin-left: 4rem;
       margin-right: 4rem;
       max-width: 1000px;
+    }
+  }
+
+  .what--size-small .what__paragraph {
+    font-size: 1.1rem;
+  }
+
+  @media ${mq.tabletLandscape} {
+    .what--size-small .what__paragraph {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media ${mq.tabletLandscape} {
+    .what--size-small .what__paragraph {
+      font-size: 1.75rem;
     }
   }
 

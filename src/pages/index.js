@@ -1,16 +1,20 @@
 import { graphql } from "gatsby";
-import React, { Fragment } from "react";
+import React from "react";
 
+import Header from '../components/header';
 import Hello from "../components/hello";
 import Imprint from "../components/imprint";
 import What from "../components/what";
 import withLayout from "../components/with-layout";
 
 export default withLayout(({ data }) => (
-  <Fragment>
+  <>
+    <Header logo={false} />
+
     <Hello title="Zoff" />
 
     <What
+      theme="red"
       paragraphs={[
         `
           Zoff ist ein berliner Kollektiv, welches visuelle Kommunikationswerkzeuge
@@ -21,7 +25,7 @@ export default withLayout(({ data }) => (
     />
 
     <Imprint email={data.site.siteMetadata.email} />
-  </Fragment>
+  </>
 ));
 
 export const query = graphql`
