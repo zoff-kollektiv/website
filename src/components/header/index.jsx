@@ -1,7 +1,7 @@
 import Link from "gatsby-link";
 import React from "react";
 
-import style, { navItemStyles, logoStyles } from './style';
+import style, { navItemStyles, logoStyles } from "./style";
 
 const Header = ({ logo = true }) => (
   <header className="header">

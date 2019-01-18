@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import style from './style';
+import style from "./style";
 
-export default ({ name, description, email, direction = 'ltr', imageSrc }) => (
+export default ({ name, description, email, direction = "ltr", imageSrc }) => (
   <div className={`person direction-${direction}`}>
     <style jsx>{style}</style>
 
@@ -13,7 +13,9 @@ export default ({ name, description, email, direction = 'ltr', imageSrc }) => (
     <div className="content">
       <h2 className="title">{name}</h2>
       <p>{description}</p>
-      <a href={email} className="email">{email}</a>
+      <a href={email} className="email">
+        {email}
+      </a>
     </div>
   </div>
 );

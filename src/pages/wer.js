@@ -1,13 +1,13 @@
-import css from 'styled-jsx/css';
-import { graphql } from 'gatsby';
-import React from 'react';
+import css from "styled-jsx/css";
+import { graphql } from "gatsby";
+import React from "react";
 
-import Header from '../components/header';
-import Person from '../components/person';
+import Header from "../components/header";
+import Person from "../components/person";
 import What from "../components/what";
 import withLayout from "../components/with-layout";
 
-import { mq } from '../tokens';
+import { mq } from "../tokens";
 
 const style = css`
   @media ${mq.tabletLandscape} {
@@ -36,7 +36,7 @@ export default withLayout(() => (
           Straße trafen wir alle aufeinander.
         `
       ]}
-      />
+    />
 
     <What
       theme="red"
@@ -59,27 +59,31 @@ export default withLayout(() => (
         name="Laura Maikowski"
         email="laura@zoff-kollektiv.net"
         description=""
-        imageSrc="/images/laura-maikowski.png" />
+        imageSrc="/images/laura-maikowski.png"
+      />
 
       <Person
         name="Susanne Beer"
         email="susanne@zoff-kollektiv.net"
         description=""
         direction="rtl"
-        imageSrc="/images/susanne-beer.jpg" />
+        imageSrc="/images/susanne-beer.jpg"
+      />
 
       <Person
         name="Pierre Maite"
         email="pierre@zoff-kollektiv.net"
         description=""
-        imageSrc="/images/pierre-maite.jpg" />
+        imageSrc="/images/pierre-maite.jpg"
+      />
 
       <Person
         name="Gustav Pursche"
         email="gustav@zoff-kollektiv.net"
         description=""
         direction="rtl"
-        imageSrc="/images/gustav-pursche.jpg" />
+        imageSrc="/images/gustav-pursche.jpg"
+      />
     </div>
   </>
 ));
