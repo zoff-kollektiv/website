@@ -33,7 +33,9 @@ export default css`
   }
 
   .hello__image {
+    font-size: 0;
     height: 100%;
+    line-height: 1;
     min-width: 100%;
   }
 
