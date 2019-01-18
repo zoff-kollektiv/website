@@ -67,7 +67,6 @@ export default withLayout(() => (
         email="susanne@zoff-kollektiv.net"
         description=""
         direction="rtl"
-        imageSrc="/images/susanne-beer.jpg"
       />
 
       <Person
