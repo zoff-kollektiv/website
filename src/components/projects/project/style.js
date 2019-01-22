@@ -27,6 +27,8 @@ export default css`
   }
 
   .image {
+    height: auto;
+    max-width: 100%;
     object-fit: contain;
   }
 
