@@ -47,7 +47,7 @@ export default css`
       font-size: 2.4rem;
       margin-left: 4rem;
       margin-right: 4rem;
-      max-width: 1000px;
+      max-width: 880px;
     }
   }
 
