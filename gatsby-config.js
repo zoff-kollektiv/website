@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
   siteMetadata: {
@@ -12,13 +12,21 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images-projects",
-        path: path.join(__dirname, "static", "images", "projects"),
-      },
+        path: path.join(__dirname, "static", "images", "projects")
+      }
+    },
+
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images-header",
+        path: path.join(__dirname, "static", "images", "header")
+      }
     },
 
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-jsx",
     "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    "gatsby-transformer-sharp"
   ]
 };
