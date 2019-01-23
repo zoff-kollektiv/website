@@ -16,10 +16,8 @@ const Fonts = () => (
       font-display: swap;
       font-family: ${fonts.mark.name};
       font-weight: ${fonts.mark.weight.bold};
-      src: url(/fonts/markweb/mark-ot-bold.woff)
-          format("woff"),
-        url(/fonts/markweb/mark-ot-bold.woff2)
-          format("woff2");
+      src: url(/fonts/markweb/mark-ot-bold.woff) format("woff"),
+        url(/fonts/markweb/mark-ot-bold.woff2) format("woff2");
     }
   `}</style>
 );
