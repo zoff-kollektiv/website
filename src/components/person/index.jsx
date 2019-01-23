@@ -2,7 +2,14 @@ import React from "react";
 
 import style from "./style";
 
-export default ({ name, description, email, direction = "ltr", image, role }) => (
+export default ({
+  name,
+  description,
+  email,
+  direction = "ltr",
+  image,
+  role
+}) => (
   <div className={`person direction-${direction}`}>
     <style jsx>{style}</style>
 

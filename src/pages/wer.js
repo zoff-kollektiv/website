@@ -35,12 +35,12 @@ export default withLayout(({ data: { images: { edges: images } } }) => (
       small={true}
       paragraphs={[
         `
-          Wir existieren als kollektiver Betrieb seit 2018. Während sich Laura
-          und Susanne zuvor bereits in Bildargumente zusammentaten um sich
-          intensiv mit der Wirkung von Bildern auseinander zu setzen, wirkte
-          Pierre noch gestalterisch als Teil von Ça ira! und Gustav war
-          journalistisch im jib collective unterwegs. Im Rahmen der Lausitzer
-          Straße trafen wir alle aufeinander.
+        Wir existieren als kollektiver Betrieb seit 2019. Während sich Laura
+        und Susanne zuvor bereits in Bildargumente zusammentaten um sich
+        intensiv mit der Wirkung von Bildern auseinander zu setzen, wirkte
+        Pierre gestalterisch als Teil von Ça ira! und Gustav war journalistisch
+        im jib collective unterwegs. Im Rahmen der Lausitzer Straße trafen wir
+        alle aufeinander.
         `
       ]}
     />
@@ -50,13 +50,12 @@ export default withLayout(({ data: { images: { edges: images } } }) => (
       small={true}
       paragraphs={[
         `
-          Als Kollektiv arbeiten weiterhin nicht für, sondern auf Augenhöhe.
-          Anstelle von Dienstleistung setzen wir Kooperation. Wir verstehen uns
-          auch außerhalb des Büros als ein solidarischer Zusammenschluss, in
-          dem wir uns gegenseitig unterstützen, gemeinsam arbeiten und gemeinsam
-          von- und miteinander lernen. Was uns antreibt ist die Vision, dass
-          radikaler gesellschaftlicher Wandel möglich ist. Uns interessiert
-          dabei vor allem die soziale Funktion unserer Produkte.
+        Als Kollektiv arbeiten wir nicht für Menschen oder Organisationen,
+        sondern mit Menschen oder Organisationen – auf Augenhöhe. Wir setzen
+        auf Zusammenarbeit und verstehen unsere Arbeit nicht als Dienstleistung.
+        Was uns antreibt ist die Vision, dass radikaler gesellschaftlicher
+        Wandel möglich ist. Uns interessiert dabei vor allem die soziale
+        Funktion unserer Produkte.
         `
       ]}
     />
