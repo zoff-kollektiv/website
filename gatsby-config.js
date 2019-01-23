@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: "Zoff",
@@ -6,8 +8,17 @@ module.exports = {
     email: "kontakt@zoff-kollektiv.net"
   },
   plugins: [
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images-projects",
+        path: path.join(__dirname, "static", "images", "projects"),
+      },
+    },
+
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-jsx",
-    "gatsby-transformer-remark"
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
   ]
 };

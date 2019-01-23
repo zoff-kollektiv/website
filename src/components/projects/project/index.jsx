@@ -18,6 +18,9 @@ export default ({
         "project--layout-2-column": layout === "2-column"
       },
       {
+        "project--layout-2-column-reversed": layout === "2-column-reversed"
+      },
+      {
         "project--layout-3-column": layout === "3-column"
       },
       {

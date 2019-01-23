@@ -9,6 +9,7 @@ export default css`
     flex-direction: column;
   }
 
+  .project--layout-2-column-reversed,
   .project--layout-2-column {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -64,8 +65,15 @@ export default css`
     width: 25%;
   }
 
+  .project--layout-2-column-reversed .image-container,
   .project--layout-2-column .image-container {
+    flex-direction: column;
     width: 40%;
+  }
+
+  .project--layout-2-column-reversed .image-container {
+    margin-right: 4.5rem;
+    order: -1;
   }
 
   .project--layout-3-column .image-container {
@@ -74,9 +82,10 @@ export default css`
     margin-left: -3rem;
   }
 
+  .project--layout-2-column-reversed .content-container,
   .project--layout-2-column .content-container {
     order: -1;
-    margin-right: 1.5rem;
+    margin-right: 4.5rem;
     width: 60%;
   }
 

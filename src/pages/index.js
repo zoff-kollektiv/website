@@ -8,7 +8,9 @@ import Projects from "../components/projects";
 import What from "../components/what";
 import withLayout from "../components/with-layout";
 
-export default withLayout(({ data }) => (
+const findImageByNameAndSize = (name, size, images) => images.map(image => image.node.name === name ? image.node[`size${size}`] : null).filter(Boolean)[0];
+
+export default withLayout(({ data: { site, imagesProjects: { edges: images } } }) => (
   <>
     <Header logo={false} />
 
@@ -34,17 +36,9 @@ export default withLayout(({ data }) => (
           Rassismus geprägt ist, kommen mit about united die Stimmen von Refugees
           zurück auf die Straße.`,
           images: [
-            {
-              src: "https://dummyimage.com/400x600/000/fff"
-            },
-
-            {
-              src: "https://dummyimage.com/400x600/000/fff"
-            },
-
-            {
-              src: "https://dummyimage.com/400x600/000/fff"
-            }
+            findImageByNameAndSize('about-united-2019-3', 600, images).fluid,
+            findImageByNameAndSize('about-united-2019-2', 600, images).fluid,
+            findImageByNameAndSize('about-united-2019-1', 600, images).fluid
           ],
           year: 2019,
           customer: "about blank",
@@ -58,9 +52,7 @@ export default withLayout(({ data }) => (
         zurück auf die Straße.`,
           layout: "2-column",
           images: [
-            {
-              src: "https://dummyimage.com/600x400/000/fff"
-            }
+            findImageByNameAndSize('romarchive-1', 600, images).fluid
           ]
         },
 
@@ -74,17 +66,9 @@ export default withLayout(({ data }) => (
             "Bundesverband Frauenberatungsstellen und Frauennotrufe (BFF)",
           layout: "3-column",
           images: [
-            {
-              src: "https://dummyimage.com/600x400/000/fff"
-            },
-
-            {
-              src: "https://dummyimage.com/600x400/000/fff"
-            },
-
-            {
-              src: "https://dummyimage.com/600x400/000/fff"
-            }
+            findImageByNameAndSize('bff-1', 600, images).fluid,
+            findImageByNameAndSize('bff-2', 600, images).fluid,
+            findImageByNameAndSize('bff-3', 400, images).fluid
           ]
         },
 
@@ -97,15 +81,29 @@ export default withLayout(({ data }) => (
           customer: "taz - die tageszeitung",
           layout: "2-column",
           images: [
-            {
-              src: "https://dummyimage.com/600x400/000/fff"
-            }
+            findImageByNameAndSize('efr-1', 600, images).fluid
+          ]
+        },
+
+        {
+          title: "This is not an Atlas",
+          description: ` Wir freuen uns dass die von uns gestaltete und
+          mitentwickelte Monitoring Platform watchthemed.net, die die Aktivitäten
+          des alarmphone.org (eine Hotline für Geflüchtete auf dem Mittelmeer)
+          verzeichnet – in der Publikation „This is not an Atlas“ veröffentlicht
+          wurde.`,
+          year: 2018,
+          customer: "Kollektiv Orangotango (Hrsg.)",
+          layout: "2-column-reversed",
+          images: [
+            findImageByNameAndSize('watch-the-med-1', 600, images).fluid,
+            findImageByNameAndSize('watch-the-med-2', 600, images).fluid
           ]
         }
       ]}
     />
 
-    <Imprint email={data.site.siteMetadata.email} />
+    <Imprint email={site.siteMetadata.email} />
   </>
 ));
 
@@ -116,6 +114,27 @@ export const query = graphql`
         title
         email
         description
+      }
+    }
+
+    imagesProjects: allFile(filter: { sourceInstanceName: { eq: "images-projects" } }) {
+      edges {
+        node {
+          name
+          size600: childImageSharp {
+            fluid(maxWidth: 600) {
+              src
+              srcSet
+            }
+          }
+
+          size400: childImageSharp {
+            fluid(maxWidth: 400) {
+              src
+              srcSet
+            }
+          }
+        }
       }
     }
   }
