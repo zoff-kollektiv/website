@@ -75,7 +75,7 @@ export default withLayout(
             layout: "3-column",
             images: [
               findImageByNameAndSize("bff-1", 600, images).fluid,
-              findImageByNameAndSize("bff-2", 600, images).fluid,
+              findImageByNameAndSize("bff-2", 400, images).fluid,
               findImageByNameAndSize("bff-3", 400, images).fluid
             ]
           },
@@ -140,6 +140,14 @@ export const query = graphql`
       edges {
         node {
           name
+
+          size800: childImageSharp {
+            fluid(maxWidth: 800) {
+              src
+              srcSet
+            }
+          }
+
           size600: childImageSharp {
             fluid(maxWidth: 600) {
               src
