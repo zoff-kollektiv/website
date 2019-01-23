@@ -20,6 +20,7 @@ export default css`
   }
 
   .image-container {
+    align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -33,8 +34,13 @@ export default css`
     object-fit: contain;
   }
 
-  .image + .image {
+  .project--layout-poster .image + .image {
     margin-left: 1.5rem;
+  }
+
+  .project--layout-2-column-reversed .image + .image,
+  .project--layout-2-column .image + .image {
+    margin-top: 1.5rem;
   }
 
   .project--layout-poster .content-container,
@@ -56,6 +62,7 @@ export default css`
   }
 
   .project--layout-3-column .image:nth-child(2) {
+    margin-left: 1.5rem;
     width: 25%;
   }
 
