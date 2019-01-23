@@ -70,7 +70,7 @@ export default withLayout(
             layout: "2-column",
             images: [findImageByNameAndSize("romarchive-1", 600, images).fluid],
             year: 2019,
-            customer: "RomArchive",
+            customer: "RomArchive"
           },
 
           {

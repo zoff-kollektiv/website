@@ -1,6 +1,6 @@
 import css from "styled-jsx/css";
 
-import { colors, fonts } from "../../tokens";
+import { colors, fonts, mq } from "../../tokens";
 
 export default css`
   section {
@@ -13,10 +13,17 @@ export default css`
   .title {
     color: ${colors.red};
     font-family: ${fonts.mark.family};
-    font-size: 1.625rem;
+    font-size: 1.5rem;
     font-weight: ${fonts.mark.weight.bold};
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     text-transform: uppercase;
+  }
+
+  @media ${mq.tabletLandscape} {
+    .title {
+      font-size: 1.625rem;
+      margin-bottom: 5rem;
+    }
   }
 
   ul {
@@ -28,6 +35,12 @@ export default css`
   }
 
   li + li {
-    margin-top: 8rem;
+    margin-top: 3rem;
+  }
+
+  @media ${mq.tabletLandscape} {
+    li + li {
+      margin-top: 8rem;
+    }
   }
 `;

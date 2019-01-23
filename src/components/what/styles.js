@@ -30,7 +30,7 @@ export default css`
   .what__paragraph {
     color: ${colors.red};
     font-family: ${fonts.mark.family};
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     line-height: 1.3;
     margin: 0 2.5rem;
     width: 100%;
