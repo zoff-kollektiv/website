@@ -56,10 +56,10 @@ export default css`
   .title {
     color: ${colors.red};
     font-family: ${fonts.mark.family};
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: ${fonts.mark.weight.black};
     line-height: 1.2;
-    margin-top: 0;
+    margin-top: 1rem;
   }
 
   @media ${mq.tabletLandscape} {
@@ -69,11 +69,24 @@ export default css`
     }
   }
 
+  .role {
+    display: block;
+    font-size: 1rem;
+    font-weight: ${fonts.mark.weight.medium};
+  }
+
+  @media ${mq.tabletLandscape} {
+    .role {
+      font-size: 1.5rem;
+    }
+  }
+
   p {
     color: ${colors.red};
     font-family: ${fonts.mark.family};
     font-size: 1.25rem;
     font-weight: ${fonts.mark.weight.bold};
+    margin-bottom: 4rem;
   }
 
   @media ${mq.tabletLandscape} {

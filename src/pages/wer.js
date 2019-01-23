@@ -10,6 +10,10 @@ import withLayout from "../components/with-layout";
 import { mq } from "../tokens";
 
 const style = css`
+  .persons-container {
+    margin-top: -2rem;
+  }
+
   @media ${mq.tabletLandscape} {
     .persons-container {
       margin-top: -7rem;
@@ -17,9 +21,10 @@ const style = css`
   }
 `;
 
-const findImageByName = (name, images) => images.find(image => image.node.name === name);
+const findImageByName = (name, images) =>
+  images.find(image => image.node.name === name);
 
-export default withLayout(({ data: { images: { edges: images } }}) => (
+export default withLayout(({ data: { images: { edges: images } } }) => (
   <>
     <style jsx>{style}</style>
 
@@ -59,32 +64,36 @@ export default withLayout(({ data: { images: { edges: images } }}) => (
     <div className="persons-container">
       <Person
         name="Laura Maikowski"
+        role="Konzept &amp; Gestaltung"
         email="laura@zoff-kollektiv.net"
         description=""
-        image={findImageByName('laura-maikowski', images)}
+        image={findImageByName("laura-maikowski", images)}
       />
 
       <Person
         name="Susanne Beer"
+        role="Konzept &amp; Gestaltung"
         email="susanne@zoff-kollektiv.net"
         description=""
         direction="rtl"
-        image={findImageByName('susanne-beer', images)}
+        image={findImageByName("susanne-beer", images)}
       />
 
       <Person
         name="Pierre Maite"
+        role="Konzept &amp; Gestaltung"
         email="pierre@zoff-kollektiv.net"
         description=""
-        image={findImageByName('pierre-maite', images)}
+        image={findImageByName("pierre-maite", images)}
       />
 
       <Person
         name="Gustav Pursche"
+        role="Konzept &amp; Programmierung"
         email="gustav@zoff-kollektiv.net"
         description=""
         direction="rtl"
-        image={findImageByName('gustav-pursche', images)}
+        image={findImageByName("gustav-pursche", images)}
       />
     </div>
   </>
@@ -100,11 +109,7 @@ export const query = graphql`
       }
     }
 
-    images: allFile(
-      filter: {
-        sourceInstanceName: { eq: "images-persons" }
-      }
-    ) {
+    images: allFile(filter: { sourceInstanceName: { eq: "images-persons" } }) {
       edges {
         node {
           name
