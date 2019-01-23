@@ -46,7 +46,7 @@ export default withLayout(
           Rassismus geprägt ist, kommen mit about united die Stimmen von Refugees
           zurück auf die Straße.`,
             images: [
-              findImageByNameAndSize("about-united-2019-3", 600, images).fluid,
+              findImageByNameAndSize("about-united-2019-3", 800, images).fluid,
               findImageByNameAndSize("about-united-2019-2", 600, images).fluid,
               findImageByNameAndSize("about-united-2019-1", 600, images).fluid
             ],
@@ -74,7 +74,7 @@ export default withLayout(
               "Bundesverband Frauenberatungsstellen und Frauennotrufe (BFF)",
             layout: "3-column",
             images: [
-              findImageByNameAndSize("bff-1", 600, images).fluid,
+              findImageByNameAndSize("bff-1", 800, images).fluid,
               findImageByNameAndSize("bff-2", 400, images).fluid,
               findImageByNameAndSize("bff-3", 400, images).fluid
             ]
