@@ -9,10 +9,12 @@ export default css`
     flex-direction: column;
   }
 
+  .project--layout-2-column,
+  .project--layout-2-column-reversed,
   .project--layout-3-column,
   .project--layout-poster {
-    margin-left: -1.25rem;
-    margin-right: -1.25rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
   }
 
   @media ${mq.tabletLandscape} {
@@ -42,6 +44,7 @@ export default css`
     height: auto;
     max-width: 100%;
     object-fit: contain;
+    width: 100%;
   }
 
   .project--layout-poster .image + .image {
@@ -56,13 +59,12 @@ export default css`
 
   .project--layout-2-column-reversed .image + .image,
   .project--layout-2-column .image + .image {
-    margin-left: 1.5rem;
+    margin-top: 0.5rem;
   }
 
   @media ${mq.tabletLandscape} {
     .project--layout-2-column-reversed .image + .image,
     .project--layout-2-column .image + .image {
-      margin-left: 0;
       margin-top: 1.5rem;
     }
   }
@@ -83,7 +85,7 @@ export default css`
 
   .project--layout-3-column .content-container,
   .project--layout-poster .content-container {
-    margin: 1.5rem 1.75rem 0 1.75rem;
+    margin: 1.5rem 1.5rem 0 1.5rem;
   }
 
   @media ${mq.tabletLandscape} {
@@ -126,14 +128,13 @@ export default css`
   }
 
   .project--layout-2-column-reversed .image-container,
-  .project--layout-2-column .image-container {
-    width: 100%;
-  }
+    .project--layout-2-column .image-container {
+      flex-direction: column;
+    }
 
   @media ${mq.tabletLandscape} {
     .project--layout-2-column-reversed .image-container,
     .project--layout-2-column .image-container {
-      flex-direction: column;
       width: 40%;
     }
   }
@@ -160,6 +161,8 @@ export default css`
 
   .project--layout-2-column-reversed .content-container,
   .project--layout-2-column .content-container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     margin-top: 1.5rem;
   }
 
@@ -167,6 +170,7 @@ export default css`
     .project--layout-2-column-reversed .content-container,
     .project--layout-2-column .content-container {
       order: -1;
+      margin-left: 0;
       margin-right: 4.5rem;
       margin-top: 0;
       width: 60%;
@@ -203,7 +207,7 @@ export default css`
   }
 
   @media ${mq.tabletLandscape} {
-    .title {
+    .description {
       font-size: 1.5rem;
     }
   }
