@@ -24,6 +24,14 @@ module.exports = {
       }
     },
 
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images-persons",
+        path: path.join(__dirname, "static", "images", "persons")
+      }
+    },
+
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-jsx",
     "gatsby-plugin-sharp",

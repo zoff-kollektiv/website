@@ -128,9 +128,9 @@ export default css`
   }
 
   .project--layout-2-column-reversed .image-container,
-    .project--layout-2-column .image-container {
-      flex-direction: column;
-    }
+  .project--layout-2-column .image-container {
+    flex-direction: column;
+  }
 
   @media ${mq.tabletLandscape} {
     .project--layout-2-column-reversed .image-container,

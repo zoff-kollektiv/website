@@ -2,12 +2,12 @@ import React from "react";
 
 import style from "./style";
 
-export default ({ name, description, email, direction = "ltr", imageSrc }) => (
+export default ({ name, description, email, direction = "ltr", image }) => (
   <div className={`person direction-${direction}`}>
     <style jsx>{style}</style>
 
     <figure className="image-container">
-      <img src={imageSrc} alt="" />
+      <img {...image.node.image.fluid} />
     </figure>
 
     <div className="content">

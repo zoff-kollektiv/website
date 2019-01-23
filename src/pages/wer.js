@@ -17,7 +17,9 @@ const style = css`
   }
 `;
 
-export default withLayout(() => (
+const findImageByName = (name, images) => images.find(image => image.node.name === name);
+
+export default withLayout(({ data: { images: { edges: images } }}) => (
   <>
     <style jsx>{style}</style>
 
@@ -59,7 +61,7 @@ export default withLayout(() => (
         name="Laura Maikowski"
         email="laura@zoff-kollektiv.net"
         description=""
-        imageSrc="/images/laura-maikowski.png"
+        image={findImageByName('laura-maikowski', images)}
       />
 
       <Person
@@ -67,13 +69,14 @@ export default withLayout(() => (
         email="susanne@zoff-kollektiv.net"
         description=""
         direction="rtl"
+        image={findImageByName('susanne-beer', images)}
       />
 
       <Person
         name="Pierre Maite"
         email="pierre@zoff-kollektiv.net"
         description=""
-        imageSrc="/images/pierre-maite.jpg"
+        image={findImageByName('pierre-maite', images)}
       />
 
       <Person
@@ -81,7 +84,7 @@ export default withLayout(() => (
         email="gustav@zoff-kollektiv.net"
         description=""
         direction="rtl"
-        imageSrc="/images/gustav-pursche.jpg"
+        image={findImageByName('gustav-pursche', images)}
       />
     </div>
   </>
@@ -94,6 +97,24 @@ export const query = graphql`
         title
         email
         description
+      }
+    }
+
+    images: allFile(
+      filter: {
+        sourceInstanceName: { eq: "images-persons" }
+      }
+    ) {
+      edges {
+        node {
+          name
+          image: childImageSharp {
+            fluid(maxWidth: 1280) {
+              src
+              srcSet
+            }
+          }
+        }
       }
     }
   }
