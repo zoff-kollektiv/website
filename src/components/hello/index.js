@@ -9,10 +9,7 @@ import image1Mobile from "./images/image-1--mobile.jpg";
 const Hello = ({ title, image }) => (
   <section className="hello">
     <style jsx>{styles}</style>
-    <img
-      {...image}
-      className="hello__image"
-    />
+    <img {...image} className="hello__image" />
     <h1 className="hello__title">{title}</h1>
   </section>
 );

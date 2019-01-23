@@ -124,9 +124,7 @@ export const query = graphql`
       }
     }
 
-    imageHeader: file(
-      sourceInstanceName: { eq: "images-header" }
-    ) {
+    imageHeader: file(sourceInstanceName: { eq: "images-header" }) {
       name
       image: childImageSharp {
         fluid(maxWidth: 1280) {

@@ -4,7 +4,8 @@ import { fonts, colors, mq } from "../../tokens";
 
 export default css`
   .imprint {
-    color: ${colors.red};
+    background-color: ${colors.blue};
+    color: white;
     display: flex;
     flex-direction: column;
     font-family: ${fonts.mark.family};
