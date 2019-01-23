@@ -10,6 +10,7 @@ export const fonts = {
     name: "MarkWebPro",
     family: '"MarkWebPro", serif',
     weight: {
+      medium: 500,
       bold: 700
     }
   }

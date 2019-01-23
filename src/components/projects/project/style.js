@@ -115,7 +115,7 @@ export default css`
   .description {
     font-family: ${fonts.mark.family};
     font-size: 1.5rem;
-    font-weight: ${fonts.mark.weight.bold};
+    font-weight: ${fonts.mark.weight.medium};
     line-height: 1.33;
   }
 
@@ -123,6 +123,5 @@ export default css`
     font-family: ${fonts.mark.family};
     font-size: 1.5rem;
     font-weight: ${fonts.mark.weight.bold};
-    text-decoration: underline;
   }
 `;
