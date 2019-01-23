@@ -30,10 +30,11 @@ export default withLayout(
         theme="red"
         paragraphs={[
           `
-          Zoff ist ein berliner Kollektiv, welches visuelle Kommunikationswerkzeuge
-          im Kontext von politischen, sozialen, kulturellen und Bildungsprojekten
-          entwickelt.
-        `
+          Zoff ist ein Kollektiv für visuelle Kommunikation. Wir arbeiten an der
+          Schnittstelle zwischen Design, Kunst und Politik. Gemeinsam konzipieren,
+          gestalten und programmieren wir Webseiten, entwickeln Kampagnen,
+          Publikationen und Ausstellungen.
+          `
         ]}
       />
 
