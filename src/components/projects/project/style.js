@@ -47,23 +47,31 @@ export default css`
   }
 
   .project--layout-3-column .content-container {
-    margin-top: 4rem;
+    margin-top: -10.5rem;
   }
 
   .project--layout-3-column .image:nth-child(1) {
-    width: 20%;
-  }
-
-  .project--layout-3-column .image:nth-child(2) {
     width: 50%;
   }
 
+  .project--layout-3-column .image:nth-child(2) {
+    width: 25%;
+  }
+
   .project--layout-3-column .image:nth-child(3) {
-    width: 30%;
+    margin-left: 12.5%;
+    margin-top: 1.5rem;
+    width: 25%;
   }
 
   .project--layout-2-column .image-container {
     width: 40%;
+  }
+
+  .project--layout-3-column .image-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: -3rem;
   }
 
   .project--layout-2-column .content-container {
