@@ -1,6 +1,7 @@
 const SCREEN_SIZES = [["mobile", 400], ["tabletLandscape", 960]];
 
 export const colors = {
+  blue: "#0300FF",
   red: "red"
 };
 
@@ -9,6 +10,7 @@ export const fonts = {
     name: "MarkWebPro",
     family: '"MarkWebPro", serif',
     weight: {
+      medium: 500,
       bold: 700
     }
   }
