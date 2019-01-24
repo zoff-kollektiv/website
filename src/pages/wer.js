@@ -36,8 +36,7 @@ export default withLayout(({ data: { images: { edges: images } } }) => (
       paragraphs={[
         `
         Wir existieren als kollektiver Betrieb seit 2019. Während sich Laura
-        und Susanne zuvor bereits in Bildargumente zusammentaten um sich
-        intensiv mit der Wirkung von Bildern auseinander zu setzen, wirkte
+        und Susanne zuvor bereits in Bildargumente - Studio für Gestaltung zusammentaten, wirkte
         Pierre gestalterisch als Teil von Ça ira! und Gustav war journalistisch
         im jib collective unterwegs. Im Rahmen der Lausitzer Straße trafen wir
         alle aufeinander.
@@ -50,8 +49,8 @@ export default withLayout(({ data: { images: { edges: images } } }) => (
       small={true}
       paragraphs={[
         `
-        Als Kollektiv arbeiten wir nicht für Menschen oder Organisationen,
-        sondern mit Menschen oder Organisationen – auf Augenhöhe. Wir setzen
+        Als Kollektiv arbeiten wir nicht für,
+        sondern mit Menschen – auf Augenhöhe. Wir setzen
         auf Zusammenarbeit und verstehen unsere Arbeit nicht als Dienstleistung.
         Was uns antreibt ist die Vision, dass radikaler gesellschaftlicher
         Wandel möglich ist. Uns interessiert dabei vor allem die soziale
