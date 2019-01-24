@@ -22,7 +22,14 @@ export default Content => props => {
           {
             rel: "preload",
             href:
-              "/fonts/markwebpro-bold-w01-regular/markwebpro-bold-w01-regular.woff2",
+              "/fonts/markweb/mark-ot-bold.woff2",
+            as: "font"
+          },
+
+          {
+            rel: "preload",
+            href:
+              "/fonts/markweb/mark-ot-medium.woff2",
             as: "font"
           }
         ]}
