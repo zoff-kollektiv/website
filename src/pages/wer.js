@@ -1,5 +1,6 @@
 import css from "styled-jsx/css";
 import { graphql } from "gatsby";
+import Helmet from "react-helmet";
 import React from "react";
 
 import Header from "../components/header";
@@ -26,6 +27,13 @@ const findImageByName = (name, images) =>
 
 export default withLayout(({ data: { images: { edges: images } } }) => (
   <>
+    <Helmet title="Wer wir sind">
+      <meta
+        name="description"
+        content="Die Geschichte und Mitglieder*innen des Zoff Kollektivs."
+      />
+    </Helmet>
+
     <style jsx>{style}</style>
 
     <Header />

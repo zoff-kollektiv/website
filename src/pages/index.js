@@ -1,4 +1,5 @@
 import { graphql } from "gatsby";
+import Helmet from "react-helmet";
 import React from "react";
 
 import Header from "../components/header";
@@ -22,6 +23,10 @@ export default withLayout(
     }
   }) => (
     <>
+      <Helmet title={site.siteMetadata.title} titleTemplate="">
+        <meta name="description" content={site.siteMetadata.description} />
+      </Helmet>
+
       <Header logo={false} />
 
       <Hello title="Zoff" image={imageHeader.image.fluid} />

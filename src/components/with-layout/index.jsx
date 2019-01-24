@@ -13,6 +13,7 @@ export default Content => props => {
   return (
     <I18nProvider language="de" catalogs={catalogs}>
       <Helmet
+        titleTemplate={`%s - ${data.site.siteMetadata.title}`}
         title={data.site.siteMetadata.title}
         meta={[
           {
