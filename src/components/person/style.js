@@ -86,20 +86,22 @@ export default css`
     font-family: ${fonts.mark.family};
     font-size: 1.25rem;
     font-weight: ${fonts.mark.weight.bold};
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   @media ${mq.tabletLandscape} {
     p {
       font-size: 1.5rem;
+      margin-bottom: 4rem;
     }
   }
 
   .email {
     color: ${colors.red};
     font-family: ${fonts.mark.family};
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: ${fonts.mark.weight.bold};
+    white-space: nowrap;
   }
 
   @media ${mq.tabletLandscape} {
