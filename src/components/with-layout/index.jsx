@@ -21,15 +21,13 @@ export default Content => props => {
         link={[
           {
             rel: "preload",
-            href:
-              "/fonts/markweb/mark-ot-bold.woff2",
+            href: "/fonts/markweb/mark-ot-bold.woff2",
             as: "font"
           },
 
           {
             rel: "preload",
-            href:
-              "/fonts/markweb/mark-ot-medium.woff2",
+            href: "/fonts/markweb/mark-ot-medium.woff2",
             as: "font"
           }
         ]}
