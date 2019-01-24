@@ -3,10 +3,16 @@ import React from "react";
 import styles from "./styles";
 
 const Imprint = ({ email }) => (
-  <address className="imprint" itemscope itemtype="http://schema.org/Organization">
+  <address
+    className="imprint"
+    itemscope
+    itemtype="http://schema.org/Organization"
+  >
     <style jsx>{styles}</style>
 
-    <span className="imprint__line" itemprop="legalName">Zoff</span>
+    <span className="imprint__line" itemprop="legalName">
+      Zoff
+    </span>
 
     <div itemprop="address">
       <span className="imprint__line">Lausitzer Straße 10</span>

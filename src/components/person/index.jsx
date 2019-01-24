@@ -10,20 +10,24 @@ export default ({
   image,
   role
 }) => (
-  <div className={`person direction-${direction}`}>
+  <div className={`person direction-${direction}`} itemscope itemtype="http://schema.org/Person">
     <style jsx>{style}</style>
 
     <figure className="image-container">
-      <img {...image.node.image.fluid} />
+      <img {...image.node.image.fluid} itemprop="image" />
     </figure>
 
     <div className="content">
       <h2 className="title">
-        {name}
-        <small className="role">{role}</small>
+        <span itemprop="givenName">{name}</span>
+        <small className="role" itemprop="jobTitle">{role}</small>
       </h2>
-      <p>{description}</p>
-      <a href={email} className="email">
+
+      {description && (
+        <p itemprop="description">{description}</p>
+      )}
+
+      <a href={email} className="email" itemprop="email">
         {email}
       </a>
     </div>
