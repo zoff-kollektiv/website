@@ -44,9 +44,9 @@ export default withLayout(({ data: { images: { edges: images } } }) => (
       paragraphs={[
         `
         Wir existieren als kollektiver Betrieb seit 2019. Während sich Laura
-        und Susanne zuvor bereits in Bildargumente - Studio für Gestaltung zusammentaten, wirkte
-        Pierre gestalterisch als Teil von Ça ira! und Gustav war journalistisch
-        im jib collective unterwegs. Im Rahmen der Lausitzer Straße trafen wir
+        und Susanne zuvor bereits in <a href="http://www.bildargumente.de/">Bildargumente</a> - Studio für Gestaltung zusammentaten, wirkte
+        Pierre gestalterisch als Teil von <a href="https://caira.info/">Ça ira!</a> und Gustav war journalistisch
+        im <a href="https://jib-collective.net/">jib collective</a> unterwegs. Im Rahmen der Lausitzer Straße trafen wir
         alle aufeinander.
         `
       ]}

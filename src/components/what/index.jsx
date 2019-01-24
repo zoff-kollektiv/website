@@ -10,9 +10,11 @@ const What = ({ paragraphs, theme = "white", small = false }) => (
   >
     <style jsx>{styles}</style>
     {paragraphs.map(_ => (
-      <p key={_} className="what__paragraph">
-        {_}
-      </p>
+      <p
+        key={_}
+        className="what__paragraph"
+        dangerouslySetInnerHTML={{ __html: _ }}
+      />
     ))}
   </section>
 );
