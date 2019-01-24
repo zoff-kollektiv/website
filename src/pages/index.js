@@ -67,7 +67,7 @@ Die Soliparty im Berliner Club ://about blank unterstützt antirassistische Proj
 
           {
             title: "Was geht bei euch?",
-            description: `Sex, Nähe-Distanz, Freiräume, Gesprächskultur. Wie sehen erfüllende, gewaltlose Liebesbeziehungen für Jugendliche aus? Mit dem ‚bff – Frauen gegen Gewalt‘ gehen wir der richtigen Love-Life Balance auf die Spur. In der Kampagne, die über Plakate und Clips funktioniert, werden Fragen aufgeworfen: Was ist guter Sex? Wie viel Nähe brauchst Du? Soll ein Paar über alles reden?,
+            description: `Sex, Nähe-Distanz, Freiräume, Gesprächskultur. Wie sehen erfüllende, gewaltlose Liebesbeziehungen für Jugendliche aus? Mit dem ‚bff – Frauen gegen Gewalt‘ gehen wir der richtigen Love-Life Balance auf die Spur. In der Kampagne, die über Plakate und Clips funktioniert, werden Fragen aufgeworfen: Was ist guter Sex? Wie viel Nähe brauchst Du? Soll ein Paar über alles reden?`,
             year: 2018,
             customer: "bff – Frauen gegen Gewalt",
             layout: "3-column",
