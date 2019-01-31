@@ -31,7 +31,7 @@ export default ({
 
       {description && <p itemprop="description">{description}</p>}
 
-      <a href={email} className="email" itemprop="email">
+      <a href={`mailto:${email}`} className="email" itemprop="email">
         {email}
       </a>
     </div>
