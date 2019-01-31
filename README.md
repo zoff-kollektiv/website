@@ -1,5 +1,7 @@
 # Zoff collective
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bb6b7584-71d1-47b3-b6d9-972effe90f7a/deploy-status)](https://app.netlify.com/sites/zoff/deploys)
+
 ## Install
 
 `npm install`
