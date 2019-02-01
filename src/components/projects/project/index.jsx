@@ -33,7 +33,11 @@ export default ({
 
     <div className="image-container">
       {images.map(image => (
-        <img alt={`Projektdokumentation ${title}`} {...image} className="image" />
+        <img
+          alt={`Projektdokumentation ${title}`}
+          {...image}
+          className="image"
+        />
       ))}
     </div>
 

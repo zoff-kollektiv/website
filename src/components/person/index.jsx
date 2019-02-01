@@ -18,7 +18,7 @@ export default ({
     <style jsx>{style}</style>
 
     <figure className="image-container">
-      <img {...image.node.image.fluid} itemprop="image" />
+      <img alt={`Portrait ${name}`} {...image.node.image.fluid} itemprop="image" />
     </figure>
 
     <div className="content">
