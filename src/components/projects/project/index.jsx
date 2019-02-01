@@ -9,7 +9,8 @@ export default ({
   year,
   customer,
   layout,
-  images = []
+  images = [],
+  link
 }) => (
   <div
     className={classnames(
@@ -41,9 +42,17 @@ export default ({
       <p className="description">{description}</p>
 
       {year && customer && (
-        <p className="meta">
-          {year}, {customer}
-        </p>
+        <>
+          {link ? (
+            <a href={link} className="meta">
+              {year}, {customer}
+            </a>
+          ) : (
+            <p className="meta">
+              {year}, {customer}
+            </p>
+          )}
+        </>
       )}
     </div>
   </div>

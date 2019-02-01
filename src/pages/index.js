@@ -58,7 +58,8 @@ Die Soliparty im Berliner Club ://about blank unterstützt antirassistische Proj
             ],
             year: 2019,
             customer: "://about blank",
-            layout: "poster"
+            layout: "poster",
+            link: "https://"
           },
 
           {
