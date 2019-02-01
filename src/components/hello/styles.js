@@ -3,6 +3,7 @@ import { fonts, mq, colors } from "../../tokens";
 
 export default css`
   .hello {
+    background-color: black;
     font-size: 0;
     overflow: hidden;
     line-height: 1;
