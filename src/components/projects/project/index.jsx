@@ -9,7 +9,8 @@ export default ({
   year,
   customer,
   layout,
-  images = []
+  images = [],
+  link
 }) => (
   <div
     className={classnames(
@@ -32,7 +33,11 @@ export default ({
 
     <div className="image-container">
       {images.map(image => (
-        <img {...image} className="image" />
+        <img
+          alt={`Projektdokumentation ${title}`}
+          {...image}
+          className="image"
+        />
       ))}
     </div>
 
@@ -41,9 +46,17 @@ export default ({
       <p className="description">{description}</p>
 
       {year && customer && (
-        <p className="meta">
-          {year}, {customer}
-        </p>
+        <>
+          {link ? (
+            <a href={link} className="meta">
+              {year}, {customer}
+            </a>
+          ) : (
+            <p className="meta">
+              {year}, {customer}
+            </p>
+          )}
+        </>
       )}
     </div>
   </div>

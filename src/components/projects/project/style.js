@@ -223,4 +223,8 @@ export default css`
       font-size: 1.5rem;
     }
   }
+
+  a.meta {
+    text-decoration: underline;
+  }
 `;

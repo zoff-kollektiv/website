@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/aria-role */
+
 import css from "styled-jsx/css";
 import { graphql } from "gatsby";
 import Helmet from "react-helmet";
