@@ -41,8 +41,11 @@ export default css`
   }
 
   .image {
-    height: auto;
     max-width: 100%;
+  }
+
+  .image__image {
+    height: auto;
     object-fit: contain;
     width: 100%;
   }

@@ -148,6 +148,8 @@ export const query = graphql`
             fluid(maxWidth: 800) {
               src
               srcSet
+              srcWebp
+              srcSetWebp
             }
           }
 
@@ -155,6 +157,8 @@ export const query = graphql`
             fluid(maxWidth: 600) {
               src
               srcSet
+              srcWebp
+              srcSetWebp
             }
           }
 
@@ -162,6 +166,8 @@ export const query = graphql`
             fluid(maxWidth: 400) {
               src
               srcSet
+              srcWebp
+              srcSetWebp
             }
           }
         }
