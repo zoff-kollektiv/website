@@ -35,9 +35,13 @@ export default ({
       {images.map(image => (
         <picture className="image">
           <source srcset={image.srcSetWebp} type="image/webp" />
-          <source srcset={image.srcset} type="image/jpeg" />
+          <source srcset={image.srcSet} type="image/jpeg" />
 
-          <img alt={`Projektdokumentation ${title}`} src={image.src} className="image__image" />
+          <img
+            alt={`Projektdokumentation ${title}`}
+            src={image.src}
+            className="image__image"
+          />
         </picture>
       ))}
     </div>

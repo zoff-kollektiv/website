@@ -8,7 +8,7 @@ export default ({ title, image }) => (
 
     <picture className="hello__image">
       <source srcset={image.srcSetWebp} type="image/webp" />
-      <source srcset={image.srcset} type="image/jpeg" />
+      <source srcset={image.srcSet} type="image/jpeg" />
 
       <img alt="Zoff" src={image.src} />
     </picture>
