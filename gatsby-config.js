@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   siteMetadata: {
-    title: "Zoff",
+    title: "Zoff Kollektiv",
     description: "Zoff ist ein Kollektiv für visuelle Kommunikation in Berlin.",
     email: "kontakt@zoff-kollektiv.net"
   },

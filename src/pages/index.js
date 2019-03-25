@@ -131,6 +131,8 @@ export const query = graphql`
         fluid(maxWidth: 1280) {
           src
           srcSet
+          srcWebp
+          srcSetWebp
         }
       }
     }
