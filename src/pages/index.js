@@ -58,7 +58,8 @@ Die Soliparty im Berliner Club ://about blank unterstützt antirassistische Proj
             ],
             year: 2019,
             customer: "://about blank",
-            layout: "poster"
+            layout: "poster",
+            link: "https://www.typographicposters.com/about-welcome"
           },
 
           {
@@ -67,7 +68,8 @@ Die Soliparty im Berliner Club ://about blank unterstützt antirassistische Proj
             layout: "2-column",
             images: [findImageByNameAndSize("romarchive-1", 600, images).fluid],
             year: 2019,
-            customer: "RomArchive"
+            customer: "RomArchive",
+            link: "https://romarchive.eu"
           },
 
           {
@@ -89,7 +91,8 @@ Die Soliparty im Berliner Club ://about blank unterstützt antirassistische Proj
             year: 2018,
             customer: "taz - die tageszeitung",
             layout: "2-column",
-            images: [findImageByNameAndSize("efr-1", 600, images).fluid]
+            images: [findImageByNameAndSize("efr-1", 600, images).fluid],
+            link: "http://taz.de/efr/2/"
           },
 
           {
@@ -101,7 +104,8 @@ Die Soliparty im Berliner Club ://about blank unterstützt antirassistische Proj
             images: [
               findImageByNameAndSize("watch-the-med-1", 600, images).fluid,
               findImageByNameAndSize("watch-the-med-2", 600, images).fluid
-            ]
+            ],
+            link: "https://notanatlas.org/maps/mapping-safe-passages/"
           }
         ]}
       />
