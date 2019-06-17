@@ -47,6 +47,16 @@ export default withLayout(
         title="Was wir tun"
         items={[
           {
+            title: "Eigensinn im Bruderland",
+            description: `Migrant*innen in der DDR kamen häufig aus Ländern, mit denen die DDR freundschaftliche Beziehungen unterhielt, aus 'sozialistischen Bruderländern'. Im Zusammenleben gab es Gemeinschaft und Konflikte. Von Alltagserfahrungen, vom Wohnen, Arbeiten Studieren und der Freizeit als Migrant*innen im Realsozialismus erzählen 9 Protagonist*innen sowie Dokumente aus Archiven.`,
+            layout: "2-column",
+            images: [findImageByNameAndSize("bruderland-1", 600, images).fluid],
+            year: 2019,
+            customer: "Zentrum für Antisemitismusforschung TU Berlin, out of focus Filmproduktion",
+            link: "https://bruderland.de"
+          },
+
+          {
             title: "About United Poster",
             description: `In gemeinsamen Fotoshootings und Textworkshops mit inspirierenden Aktivist*innen & Initiativen haben wir die diesjährige Plakatkampagne für about:united entwickelt.
 Während der öffentliche Mainstream-Diskurs immer mehr von Rassismus geprägt ist, setzen sie sich dem rassistischen Diskurs entgegen und erzählen von ihren Erfahrungen, Kämpfen, Ängsten und Hoffnungen.
