@@ -48,7 +48,7 @@ export default withLayout(
         items={[
           {
             title: "Eigensinn im Bruderland",
-            description: `Migrant*innen in der DDR kamen häufig aus Ländern, mit denen die DDR freundschaftliche Beziehungen unterhielt, aus 'sozialistischen Bruderländern'. Im Zusammenleben gab es Gemeinschaft und Konflikte. Von Alltagserfahrungen, vom Wohnen, Arbeiten Studieren und der Freizeit als Migrant*innen im Realsozialismus erzählen 9 Protagonist*innen sowie Dokumente aus Archiven.`,
+            description: `Migrant*innen in der DDR kamen häufig aus Ländern, mit denen die DDR freundschaftliche Beziehungen unterhielt. 9 Protagonist*innen erzählen von Alltagserfahrungen, vom Wohnen, Arbeiten, Studieren und der Freizeit.`,
             layout: "2-column",
             images: [findImageByNameAndSize("bruderland-1", 600, images).fluid],
             year: 2019,
