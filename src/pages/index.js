@@ -52,7 +52,8 @@ export default withLayout(
             layout: "2-column",
             images: [findImageByNameAndSize("bruderland-1", 600, images).fluid],
             year: 2019,
-            customer: "Zentrum für Antisemitismusforschung TU Berlin, out of focus Filmproduktion",
+            customer:
+              "Zentrum für Antisemitismusforschung TU Berlin, out of focus Filmproduktion",
             link: "https://bruderland.de"
           },
 
